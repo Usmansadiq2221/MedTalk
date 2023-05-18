@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854094804900",
+    "firebase_url": "https://medtalk-c0278-default-rtdb.firebaseio.com",
+    "project_id": "medtalk-c0278",
+    "storage_bucket": "medtalk-c0278.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854094804900:android:92829eea708c001717f331",
+        "android_client_info": {
+          "package_name": "com.devtwist.medtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854094804900-ij3go4mncivjevi3jqtdgktl0hvndrv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devtwist.medtalk",
+            "certificate_hash": "8f703581df119febd9297ff9d9bda25572d42229"
+          }
+        },
+        {
+          "client_id": "854094804900-0ria1vite72motfqiuqol8mgt7g9n86n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCALc1MrZ-t2tbN-DpLbdTJnmv7Ut_ulGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854094804900-0ria1vite72motfqiuqol8mgt7g9n86n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

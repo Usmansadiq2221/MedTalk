@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/editTextColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/myDarkColor"
+        android:gravity="center"
+        android:text="Feedback"
+        android:textColor="@color/editTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:numStars="5"
+        android:progressTint="@color/button_color"
+        android:stepSize="0.1" />
+
+    <EditText
+        android:id="@+id/feedbackInput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/feedback_edittext"
+        android:gravity="top"
+        android:hint="Enter Feedback"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColor="@color/myLightColor"
+        android:textColorHint="@color/textColor" />
+
+    <Button
+        android:id="@+id/submitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="32dp"
+        android:background="@drawable/orange_button"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="0dp"
+        android:text="Submit Feedback"
+        android:textAllCaps="false"
+        android:textColor="@color/editTextColor"
+        android:textStyle="bold" />
+
+</LinearLayout>

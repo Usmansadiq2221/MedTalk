@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/appoint_layout_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/appointProfileItem"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/image_back_file"
+            android:padding="3dp"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeColor="@color/editTextColor"
+            app:strokeWidth="3dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@color/editTextColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:background="@color/editTextColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:background="@color/editTextColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@color/editTextColor" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1000dp"
+        android:layout_height="1dp"
+        android:layout_marginVertical="4dp"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myGrayColor"
+    android:orientation="vertical"
+    tools:context=".Activities.BlockListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myDarkColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="48dp"
+            android:background="@color/myDarkColor"
+            android:gravity="center"
+            android:text="Blocklist"
+            android:textColor="@color/editTextColor"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/preBlockedUView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="15"
+        app:shimmer_demo_grid_child_count="2"
+        android:layout_margin="12dp"
+        app:shimmer_demo_layout="@layout/list_loading_layout"
+        app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+    <TextView
+        android:id="@+id/noReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="No Feedback\nYet"
+        android:textColor="@color/textColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

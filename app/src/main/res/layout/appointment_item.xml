@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clientType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="32dp"
+    android:background="@drawable/appoint_layout_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/appointProfileItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/image_back_file"
+        android:padding="3dp"
+        android:src="@drawable/enter_profile_icon"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:strokeColor="@color/editTextColor"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/appointName"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="Muhammad USman"
+        android:textColor="@color/myDarkColor"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/docAPCategoryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawableLeft="@drawable/profession_icon"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Dermatologist"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/appointDateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@drawable/appoint_icon"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Dermatologist"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/appointTimeItem"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@drawable/baseline_access_time_24"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Dermatologist"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clientTypeItem"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Dermatologist"
+        android:textColor="@color/button_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/docHospital"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Allied Hospital"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/viewAppointItem"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/orange_button"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="0dp"
+        android:text="View Appointment"
+        android:textAllCaps="false"
+        android:textColor="@color/editTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

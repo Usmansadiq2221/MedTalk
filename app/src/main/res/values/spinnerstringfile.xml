@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="courses_array">
+        <item>Select course</item>
+        <item>Psychological assessment</item>
+        <item>Psychological testing</item>
+        <item>Child disorder</item>
+        <item>DSM 5 Tr</item>
+        <item>Counseling</item>
+        <item>Psychotherapies</item>
+        <item>Testing and measurement in psychology</item>
+        <item>Rehabilitation skills</item>
+        <item>Webinar according to daily life problems</item>
+        <item>Speech and language therapy</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>Select Category</item>
+        <item>Anesthesiologist</item>
+        <item>Cardiologist</item>
+        <item>Dermatologist</item>
+        <item>Dentist</item>
+        <item>Endocrinologist</item>
+        <item>Gynaecologist</item>
+        <item>Gastroenterologist</item>
+        <item>Neurologist</item>
+        <item>Orthopedist</item>
+        <item>Otolaryngologist</item>
+        <item>Oncologist</item>
+        <item>Ophthalmologist</item>
+        <item>Paediatrician</item>
+        <item>Psychologist</item>
+        <item>Pulmonologist</item>
+        <item>Radiologist</item>
+        <item>Surgeon</item>
+        <item>Urologist</item>
+        <item>Veterinarian</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Not Specified</item>
+    </string-array>
+
+    <string-array name="province_array">
+        <item>Select Province</item>
+        <item>Punjab</item>
+        <item>Balochistan</item>
+        <item>K.P.K</item>
+        <item>Sindh</item>
+    </string-array>
+
+    <string-array name="punjab_array">
+        <item>Select City</item>
+        <item>Attock</item>
+        <item>Ahmedpur East</item>
+        <item>Arifwala</item>
+        <item>Attock</item>
+        <item>Ahmedpur East</item>
+        <item>Arifwala</item>
+        <item>Chiniot</item>
+        <item>Chistian</item>
+        <item>Chakwal</item>
+        <item>Dera Ghazi Khan</item>
+        <item>Daska</item>
+        <item>Faisalabad</item>
+        <item> Ferozwala</item>
+        <item>Gujranwala</item>
+        <item>Gujrat</item>
+        <item>Gojra</item>
+        <item>Gujranwala Cantonment</item>
+        <item>Hafizabad</item>
+        <item>Hasilpur</item>
+        <item>Haronabad</item>
+        <item>Jaranwala</item>
+        <item>Jhang</item>
+        <item>Jhelum</item>
+        <item>Jatoi</item>
+        <item>Kasur</item>
+        <item>Kamoke</item>
+        <item>Khanewal</item>
+        <item>Khanpur</item>
+        <item>Kot Abdul Malik</item>
+        <item>Kot Addu</item>
+        <item>Kamalia</item>
+        <item>Khoshab</item>
+        <item>Lahore</item>
+        <item>Lodhra</item>
+        <item>Layyah</item>
+        <item>Multan</item>
+        <item>Mandi Bahauddin</item>
+        <item>Muridke</item>
+        <item>Narowal</item>
+        <item>Okara</item>
+        <item>Pakpattan</item>
+        <item>Rawalpindi</item>
+        <item>Rahim Yar Khan</item>
+        <item>Sargodha</item>
+        <item>Sialkot</item>
+        <item>Sheikhupora</item>
+        <item>Sahiwal</item>
+        <item>Sadiqabad</item>
+        <item>Samundari</item>
+        <item>Sambrial</item>
+        <item>Texila</item>
+        <item>Vehari</item>
+        <item>Wah Cantoment</item>
+        <item>Wazirabad</item>
+    </string-array>
+
+    <string-array name="sindh_array">
+        <item>Select City</item>
+        <item>Badin</item>
+        <item>Bhirkan</item>
+        <item>Rajo Khanani</item>
+        <item>Chak</item>
+        <item>Dadu</item>
+        <item>Digri</item>
+        <item>Diplo</item>
+        <item>Dokri</item>
+        <item>Ghotki</item>
+        <item>Haala</item>
+        <item>Hyderabad</item>
+        <item>Islamkot</item>
+        <item>Jacobabad</item>
+        <item>Jamshoro</item>
+        <item>Jungshahi</item>
+        <item>Kandhkot</item>
+        <item>Kandiaro</item>
+        <item>Karachi</item>
+        <item>Kashmore</item>
+        <item>Keti bandar</item>
+        <item>Khairpur</item>
+        <item>Kotri</item>
+        <item>Larkana</item>
+        <item>Matiari</item>
+        <item>Mehar</item>
+        <item>Mirpur Khas</item>
+        <item>Mithani</item>
+        <item>Mithi</item>
+        <item>Mehrabpur</item>
+        <item>Moro</item>
+        <item>Nagarparkar</item>
+        <item>Naudero</item>
+        <item>Naushahro Feroz</item>
+        <item>Naushara</item>
+        <item>Nawabshah</item>
+        <item>Nazimabad</item>
+        <item>Qambar</item>
+        <item>Qasimabad</item>
+        <item>Ranipur</item>
+        <item>Ratodero</item>
+        <item>Rohri</item>
+        <item>Sakrand</item>
+        <item>Shahbandar</item>
+        <item>Sanghar</item>
+        <item>Shahdakot</item>
+        <item>Shahdarpur</item>
+        <item>Shahpur Chakar</item>
+        <item>Shikarpaur</item>
+        <item>Sukkur</item>
+        <item>Tangwani</item>
+        <item>Tando adam</item>
+        <item>Khan</item>
+        <item>Tando Allahyar</item>
+        <item>Tando</item>
+        <item>Muhammad Khan</item>
+        <item>Thatta</item>
+        <item>Umerkot</item>
+        <item>Warah</item>
+    </string-array>
+
+    <string-array name="kpk_array">
+        <item>Select City</item>
+        <item>Abbottabad</item>
+        <item>Adezai</item>
+        <item> Alpuri</item>
+        <item>Akora Khattak</item>
+        <item>Ayubia</item>
+        <item>Banda Daud Shah</item>
+        <item>Bannu</item>
+        <item>Batkhela</item>
+        <item>Battagra</item>
+        <item> Birote</item>
+        <item>Chakdara</item>
+        <item>Charsadda</item>
+        <item>Chitral</item>
+        <item>Daggar</item>
+        <item>Dargai</item>
+        <item>Darya Khan</item>
+        <item>Dera Ismail Khan</item>
+        <item>Doaba</item>
+        <item>Dir</item>
+        <item>Drosh</item>
+        <item>Hangu</item>
+        <item>Haripu</item>
+        <item>Karak</item>
+        <item>kohat</item>
+        <item>Kulachi</item>
+        <item>Lakki Marwat</item>
+        <item>Latamber</item>
+        <item>Madyan</item>
+        <item>Mansehra</item>
+        <item>Mardan</item>
+        <item>Mastuj</item>
+        <item>Mingora</item>
+        <item>Nowshera</item>
+        <item>Paharpur</item>
+        <item>Pubbi</item>
+        <item>Peshwar</item>
+        <item>Saidu Sharif</item>
+        <item>Shorkot</item>
+        <item>Shewa Adda</item>
+        <item>Swabi</item>
+        <item>Swat</item>
+        <item>Tangi</item>
+        <item>Tang</item>
+        <item>Thall</item>
+        <item>Timergara</item>
+        <item>Tordher</item>
+    </string-array>
+
+    <string-array name="balochistan_array">
+        <item>Select City</item>
+        <item>Awaran</item>
+        <item>Bela</item>
+        <item>Bhag</item>
+        <item>Buleda</item>
+        <item>Barkhan</item>
+        <item>Chaman</item>
+        <item>Chitkan</item>
+        <item>Duki</item>
+        <item>Dureji></item>
+        <item>Dhadar</item>
+        <item>Dalbandian</item>
+        <item>Dera Bugti</item>
+        <item>Dera Allah Yar</item>
+        <item>Dera Murad Jamali</item>
+        <item>Gujar Mashkay</item>
+        <item>Gawadar</item>
+        <item>Hub</item>
+        <item>Huramzai</item>
+        <item>Harnai</item>
+        <item>Jiwani</item>
+        <item>Khuzdar</item>
+        <item>Khanozai</item>
+        <item>Kohlu</item>
+        <item>Loralai</item>
+        <item>Mastung</item>
+        <item>Muslim Bhag</item>
+        <item>Musakhel</item>
+        <item>Nuskhi</item>
+        <item>Nal</item>
+        <item>Ormara</item>
+        <item>Pishin</item>
+        <item>Pasni</item>
+        <item>Qilla Abdullah</item>
+        <item>Qilla Saifullah</item>
+        <item>Qalat</item>
+        <item>Quetta</item>
+        <item>Shahrug</item>
+        <item>Sohbatpur</item>
+        <item>Surab</item>
+        <item>Suranan</item>
+        <item>Sibi</item>
+        <item>Sui Town</item>
+        <item>Turbat</item>
+        <item>Tump</item>
+        <item>Tasp</item>
+        <item>Uthal</item>
+        <item>Usta</item>
+        <item>Mohammad</item>
+        <item>Winder</item>
+        <item>Wadh</item>
+        <item>Washuk</item>
+        <item>Zehri</item>
+    </string-array>
+
+</resources>

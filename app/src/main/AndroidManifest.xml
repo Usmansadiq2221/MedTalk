@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo_square"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedTalk"
+        tools:targetApi="31">
+        <activity
+            android:name=".BlockListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewUserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ThanksScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditPatientProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditStudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AllCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewDocumentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewDocProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SearchDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OutgoingCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.IncomingCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DoctorHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateStudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreatePatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateAppointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:ignore="MissingClass" />
+
+        <service
+            android:name=".Models.MyFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

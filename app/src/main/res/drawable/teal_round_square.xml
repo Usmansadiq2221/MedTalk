@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    for pressed state-->
+    <item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/orange_round_square_rest" />
+
+    <!--    for pressed state-->
+    <item
+        android:state_focused="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/orange_round_square_rest"/>
+
+    <!--    for rest state-->
+    <item
+        android:drawable="@drawable/teal_round_square_rest" tools:ignore="ResourceCycle" />
+
+
+
+</selector>

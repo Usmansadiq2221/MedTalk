@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myGrayColor"
+    tools:context=".Activities.ViewDocProfile">
+
+    <ScrollView
+        android:id="@+id/docProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/doc_profile_bg"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/enter_profile_icon"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/profileimage"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/image_back_file"
+                        android:padding="3dp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        app:srcCompat="@drawable/enter_profile_icon"
+                        app:strokeColor="@color/editTextColor"
+                        app:strokeWidth="3dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageView
+                        android:id="@+id/backButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="12dp"
+                            android:alpha="0.6"
+                            app:srcCompat="@drawable/call_icon" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginVertical="8dp"
+                            android:layout_marginRight="12dp"
+                            android:alpha="0.6"
+                            app:srcCompat="@drawable/v_call_icon" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="12dp"
+                            android:alpha="0.6"
+                            app:srcCompat="@drawable/open_chat_icon_white" />
+
+                        <ImageView
+                            android:id="@+id/blockDoc"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            app:srcCompat="@drawable/block__icon_user" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
+                        android:background="@drawable/name_layout_bg"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:gravity="center"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:text="Dr.Hina"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:gravity="center"
+                            android:paddingHorizontal="8dp"
+                            android:singleLine="true"
+                            android:text="Allied Hospital"
+                            android:textColor="@color/textColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/patients"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:text="Patient\n \n"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:text="Experience\n \n"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:maxLength="12"
+                        android:text="Rating\n \n4.5454"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Biography"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/biography"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="6"
+                    android:text="Biography"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Appointment Time"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fOptionTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="08:00 AM"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/appointTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square_fill"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="09:00 AM"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lOptionTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="08:00 PM"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Appointment Date"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fOptionDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Mon\n10"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/appointDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square_fill"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Tue\n11"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lOptionDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/teal_round_square"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Wed\n12"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/chatButton"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="12dp"
+                        app:srcCompat="@drawable/open_chat_icon" />
+
+                    <Button
+                        android:id="@+id/bookAppoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/orange_button"
+                        android:text="Book An Appoinment"
+                        android:textAllCaps="false"
+                        android:textColor="@color/editTextColor"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <LinearLayout
+        android:id="@+id/timePickerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="24dp"
+            android:background="#EFE5DD"
+            android:elevation="10dp"
+            android:focusedMonthDateColor="#EF6000"
+            android:headerBackground="@color/button_color"
+            android:minDate="@{Calendar.getInstance().getTimeInMillis()}"
+            android:visibility="gone" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="12dp"
+            android:background="#EFE5DD"
+            android:elevation="10dp"
+            android:headerBackground="@color/button_color"
+            android:numbersBackgroundColor="@color/button_color"
+            android:numbersSelectorColor="#EF6000"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setOnlineTimerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="5dp"
+        android:text="Set"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/timePickerLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15" />
+
+    <TextView
+        android:id="@+id/setDate"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/orange_button"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Set"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/timePickerLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+    <ImageView
+        android:id="@+id/cancelOTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/timePickerLayout"
+        app:srcCompat="@drawable/cancel_timer" />
+
+    <ImageView
+        android:id="@+id/cancelODate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/timePickerLayout"
+        app:srcCompat="@drawable/cancel_timer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

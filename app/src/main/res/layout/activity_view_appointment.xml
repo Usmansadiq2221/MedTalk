@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/editTextColor"
+    android:orientation="vertical"
+    tools:context=".Activities.ViewAppointmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:minHeight="350dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewAppointLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextColor"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/myLightColor"
+                android:orientation="vertical"
+                android:paddingBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_alignBottom="@+id/backButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/submit_button"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/voiceCallIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="12dp"
+                        android:alpha="1"
+                        app:srcCompat="@drawable/call_icon" />
+
+                    <ImageView
+                        android:id="@+id/videoCallIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="12dp"
+                        android:alpha="1"
+                        app:srcCompat="@drawable/v_call_icon" />
+
+                    <ImageView
+                        android:id="@+id/chatIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="8dp"
+                        app:srcCompat="@drawable/open_chat_icon_white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="12dp"
+                    app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/clientProfile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/backButton"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="36dp"
+                    android:background="@drawable/image_back_file"
+                    android:padding="3dp"
+                    android:src="@drawable/enter_profile_icon"
+                    app:shapeAppearanceOverlay="@style/Circular"
+                    app:strokeColor="@color/editTextColor"
+                    app:strokeWidth="3dp" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/clientProfile"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toEndOf="@+id/clientProfile"
+                    android:singleLine="true"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!--                display city if client is patient
+                    display doctor's category if client is  Doctor/Student-->
+                <TextView
+                    android:id="@+id/monitor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_alignStart="@+id/username"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@+id/appointProfileItem"
+                android:text="Patient Name:"
+                android:textColor="@color/text_color_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@+id/appointProfileItem"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@+id/appointProfileItem"
+                android:text="Patient Problem:"
+                android:textColor="@color/text_color_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/patientProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@+id/appointProfileItem"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/dateHeading2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Patient Age:"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/timeheading"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/patientAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dateHeading"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/dateHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="Appointment Date"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/timeheading"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateHeading2" />
+
+                <TextView
+                    android:id="@+id/timeheading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Appointment Time"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dateHeading"
+                    app:layout_constraintTop_toBottomOf="@+id/patientAge" />
+
+                <TextView
+                    android:id="@+id/appointDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/timeheading"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateHeading" />
+
+                <TextView
+                    android:id="@+id/appointTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dateHeading"
+                    app:layout_constraintTop_toBottomOf="@+id/timeheading" />
+
+                <TextView
+                    android:id="@+id/pickDate"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/orange_round_square_fill"
+                    android:gravity="center"
+                    android:text="Pick Date"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/timeheading"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appointDate" />
+
+                <TextView
+                    android:id="@+id/pickTime"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/orange_round_square_fill"
+                    android:gravity="center"
+                    android:text="Pick Time"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dateHeading"
+                    app:layout_constraintTop_toBottomOf="@+id/appointTime" />
+
+                <TextView
+                    android:id="@+id/cancelReShedule"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/reject_button"
+                    android:gravity="center"
+                    android:text="Cancel Reshedule"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/updateShedule"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pickTime" />
+
+                <TextView
+                    android:id="@+id/updateShedule"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/submit_button"
+                    android:gravity="center"
+                    android:text="Update Shedule"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/cancelReShedule"
+                    app:layout_constraintTop_toBottomOf="@+id/pickTime" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.9" />
+
+                <LinearLayout
+                    android:id="@+id/timePickerLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                    app:layout_constraintStart_toStartOf="@+id/guideline22"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginVertical="24dp"
+                        android:background="#EFE5DD"
+                        android:elevation="10dp"
+                        android:focusedMonthDateColor="#EF6000"
+                        android:headerBackground="@color/button_color"
+                        android:minDate="@{Calendar.getInstance().getTimeInMillis()}"
+                        android:visibility="gone" />
+
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginVertical="12dp"
+                        android:background="#EFE5DD"
+                        android:elevation="10dp"
+                        android:headerBackground="@color/button_color"
+                        android:numbersBackgroundColor="@color/button_color"
+                        android:numbersSelectorColor="#EF6000"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/setOnlineTimerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:elevation="5dp"
+                    android:text="Set"
+                    android:textColor="@color/button_color"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/timePickerLayout"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline23" />
+
+                <TextView
+                    android:id="@+id/setDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="36dp"
+                    android:background="@drawable/orange_button"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="Set Date"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/timePickerLayout"
+                    app:layout_constraintEnd_toEndOf="@+id/timePickerLayout"
+                    app:layout_constraintStart_toStartOf="@+id/timePickerLayout" />
+
+                <ImageView
+                    android:id="@+id/cancelOTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                    app:layout_constraintTop_toTopOf="@+id/timePickerLayout"
+                    app:srcCompat="@drawable/cancel_timer" />
+
+                <ImageView
+                    android:id="@+id/cancelODate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="9dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/appointTime"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                    app:layout_constraintTop_toTopOf="@+id/timePickerLayout"
+                    app:srcCompat="@drawable/cancel_timer" />
+
+                <Button
+                    android:id="@+id/rejectAppoint"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/reject_button"
+                    android:padding="0dp"
+                    android:text="Reject"
+                    android:textAllCaps="false"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/acceptAppoint"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/dateHeading2"
+                    app:layout_constraintTop_toBottomOf="@+id/appointDate" />
+
+                <Button
+                    android:id="@+id/acceptAppoint"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/submit_button"
+                    android:padding="0dp"
+                    android:text="Accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/patientAge"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/rejectAppoint"
+                    app:layout_constraintTop_toBottomOf="@+id/appointTime" />
+
+                <Button
+                    android:id="@+id/resheduleAppoint"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/orange_button"
+                    android:elevation="10dp"
+                    android:padding="0dp"
+                    android:text="Reshedule"
+                    android:textAllCaps="false"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/completeAppoint"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/dateHeading2"
+                    app:layout_constraintTop_toBottomOf="@+id/appointDate" />
+
+                <Button
+                    android:id="@+id/completeAppoint"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/submit_button"
+                    android:elevation="10dp"
+                    android:padding="0dp"
+                    android:text="Complete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/editTextColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/patientAge"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/resheduleAppoint"
+                    app:layout_constraintTop_toBottomOf="@+id/appointTime" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/appointStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/appointProfileItem"
+                android:background="@drawable/appoint_status_bg"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                android:text="Your appointment is in progress."
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loadingBar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/button_color" />
+
+
+    </LinearLayout>
+
+</ScrollView>
